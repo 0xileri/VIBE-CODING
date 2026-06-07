@@ -10,8 +10,8 @@ export const profile = {
 export const stats = [
   { value: '7,700+', label: 'Followers built organically on X' },
   { value: '30+', label: 'Web3 projects collaborated with' },
-  { value: '8+', label: 'Ecosystems with bounty wins' },
-  { value: '2', label: 'Active roles — Triad & WiernaLabs' },
+  { value: '20+', label: 'Ecosystems with bounty wins' },
+  { value: '2', label: 'Active roles — Higgsfield, Triad & WiernaLabs' },
 ]
 
 export const roles = [
