@@ -4,7 +4,7 @@ export const profile = {
   handleUrl: 'https://x.com/0xileri',
   tagline: 'Web3 Content Creator & Growth Specialist',
   bio: "I help web3 projects grow through content, community, and campaigns — focused on AI, NFTs, and digital culture. Over the past few years I've built an organic audience on X and collected wins across 8+ ecosystems by creating content that actually resonates.",
-  email: 'hello@0xileri.xyz',
+  email: 'bapkingboss2@gmail.com',
 }
 
 export const stats = [
