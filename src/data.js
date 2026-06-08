@@ -21,6 +21,11 @@ export const roles = [
 
 export const achievements = [
   {
+    project: 'LaunchMyNFT',
+    result: '1st Place Winner',
+    detail: 'Took first place in the creator campaign.',
+  },
+  {
     project: 'Bungee',
     result: '1st Place Winner',
     detail: 'Top community submission across the campaign.',
@@ -55,16 +60,35 @@ export const achievements = [
     result: 'Winner',
     detail: 'Campaign winner for content and community contributions.',
   },
+  {
+    project: 'Beaks NFT',
+    result: 'NFT Spot Won',
+    detail: 'Earned an NFT spot for content creation.',
+  },
+  {
+    project: 'Unipix NFT',
+    result: 'NFT Spot Won',
+    detail: 'Earned an NFT spot for content creation.',
+  },
+  {
+    project: '365 NFT',
+    result: 'NFT Spot Won',
+    detail: 'Earned an NFT spot for content creation.',
+  },
 ]
 
 export const recognition =
   'Received rewards, placements, and ecosystem recognition across multiple web3 projects through content creation, growth initiatives, community participation, and marketing campaigns.'
 
 export const proofOfWork = [
+  { project: 'LaunchMyNFT', label: '1st place screenshot' },
   { project: 'Melee Market', label: 'Winner announcement' },
   { project: 'Stitch', label: 'Winner announcement' },
   { project: 'Bungee', label: '1st place screenshot' },
   { project: 'PerleLabs', label: 'Top 5 leaderboard' },
   { project: 'Altura', label: 'Winner announcement' },
   { project: 'Euclid', label: 'Winner announcement' },
+  { project: 'Beaks NFT', label: 'NFT spot confirmation' },
+  { project: 'Unipix NFT', label: 'NFT spot confirmation' },
+  { project: '365 NFT', label: 'NFT spot confirmation' },
 ]
