@@ -116,7 +116,11 @@ function App() {
           <div className="proof__grid">
             {proofOfWork.map((p) => (
               <div key={`${p.project}-${p.label}`} className="proof-card">
-                <span className="proof-card__placeholder">Image</span>
+                {p.image ? (
+                  <img className="proof-card__image" src={p.image} alt={`${p.project} — ${p.label}`} />
+                ) : (
+                  <span className="proof-card__placeholder">Image</span>
+                )}
                 <div className="proof-card__caption">
                   <strong>{p.project}</strong>
                   <span>{p.label}</span>

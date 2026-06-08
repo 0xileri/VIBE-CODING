@@ -1,3 +1,8 @@
+import perlelabsProof from './assets/proof/perlelabs.jpg'
+import bungeeProof from './assets/proof/bungee.jpg'
+import meleeMarketProof from './assets/proof/melee-market.jpg'
+import launchMyNftProof from './assets/proof/launchmynft.jpg'
+
 export const profile = {
   name: 'ILERI',
   handle: '@0xileri',
@@ -93,11 +98,11 @@ export const recognition =
   'Received rewards, placements, and ecosystem recognition across multiple web3 projects through content creation, growth initiatives, community participation, and marketing campaigns.'
 
 export const proofOfWork = [
-  { project: 'LaunchMyNFT', label: '1st place screenshot' },
-  { project: 'Melee Market', label: 'Winner announcement' },
+  { project: 'LaunchMyNFT', label: '1st place screenshot', image: launchMyNftProof },
+  { project: 'Bungee', label: '1st place screenshot', image: bungeeProof },
+  { project: 'Melee Market', label: 'Winner announcement', image: meleeMarketProof },
+  { project: 'PerleLabs', label: 'Top 5 leaderboard', image: perlelabsProof },
   { project: 'Stitch', label: 'Winner announcement' },
-  { project: 'Bungee', label: '1st place screenshot' },
-  { project: 'PerleLabs', label: 'Top 5 leaderboard' },
   { project: 'Altura', label: 'Winner announcement' },
   { project: 'Euclid', label: 'Winner announcement' },
   { project: 'Beaks NFT', label: 'NFT spot confirmation' },
