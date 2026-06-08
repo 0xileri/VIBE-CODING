@@ -95,13 +95,19 @@ function App() {
           <p className="section-lead">Bounty wins &amp; placements across web3 ecosystems.</p>
           <div className="achievements__grid">
             {achievements.map((a) => (
-              <article key={a.project} className="achievement-card">
+              <a
+                key={a.project}
+                className="achievement-card"
+                href={a.url}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="achievement-card__head">
                   <h3>{a.project}</h3>
                   <span className="badge">{a.result}</span>
                 </div>
                 <p>{a.detail}</p>
-              </article>
+              </a>
             ))}
           </div>
           <p className="recognition">{recognition}</p>
@@ -110,12 +116,18 @@ function App() {
         <section id="proof" className="proof">
           <h2>Proof of Work</h2>
           <p className="section-lead">
-            Screenshots, certificates, and announcements coming soon — swap these
-            placeholders for the real thing.
+            Real screenshots and announcements from the campaigns and bounties
+            I've won — tap any card to view the original post on X.
           </p>
           <div className="proof__grid">
             {proofOfWork.map((p) => (
-              <div key={`${p.project}-${p.label}`} className="proof-card">
+              <a
+                key={`${p.project}-${p.label}`}
+                className="proof-card"
+                href={p.url}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {p.image ? (
                   <img className="proof-card__image" src={p.image} alt={`${p.project} — ${p.label}`} />
                 ) : (
@@ -125,7 +137,7 @@ function App() {
                   <strong>{p.project}</strong>
                   <span>{p.label}</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>

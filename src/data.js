@@ -2,6 +2,9 @@ import perlelabsProof from './assets/proof/perlelabs.jpg'
 import bungeeProof from './assets/proof/bungee.jpg'
 import meleeMarketProof from './assets/proof/melee-market.jpg'
 import launchMyNftProof from './assets/proof/launchmynft.jpg'
+import yetchProof from './assets/proof/yetch.jpg'
+import euclidProof from './assets/proof/euclid.jpg'
+import alturaProof from './assets/proof/altura.jpg'
 
 export const profile = {
   name: 'ILERI',
@@ -41,56 +44,67 @@ export const achievements = [
     project: 'LaunchMyNFT',
     result: '1st Place Winner',
     detail: 'Took first place in the creator campaign.',
+    url: 'https://x.com/0xileri/status/2049553153738117425',
   },
   {
     project: 'Bungee',
     result: '1st Place Winner',
     detail: 'Top community submission across the campaign.',
+    url: 'https://x.com/0xileri/status/2035001439517335798',
   },
   {
     project: 'PerleLabs',
     result: 'Top 5 Placement',
     detail: 'Ranked top 5 among 10,000+ submissions.',
+    url: 'https://x.com/0xileri/status/2037235146655478071',
   },
   {
     project: 'Melee Market',
     result: 'Winner',
     detail: 'Created content and campaign submissions recognized by the ecosystem.',
+    url: 'https://x.com/0xileri/status/2053754076479770751',
   },
   {
-    project: 'Stitch',
+    project: 'Dzap',
     result: 'Winner',
-    detail: 'Recognized for content creation and ecosystem participation.',
+    detail: 'Campaign winner for content and community contributions.',
+    url: 'https://x.com/0xileri/status/2041162404545843711',
   },
   {
     project: 'Altura',
     result: 'Winner',
     detail: 'Campaign winner for content and community contributions.',
+    url: 'https://x.com/0xileri/status/2025497795415662709',
   },
   {
     project: 'Euclid',
     result: 'Winner',
     detail: 'Campaign winner for content and community contributions.',
+    url: 'https://x.com/0xileri/status/2032896106808414325',
   },
   {
     project: 'Yetch',
     result: 'Winner',
     detail: 'Campaign winner for content and community contributions.',
+    url: 'https://x.com/0xileri/status/2033976307210481759',
   },
   {
     project: 'Beaks NFT',
     result: 'NFT Spot Won',
     detail: 'Earned an NFT spot for content creation.',
+    url: 'https://x.com/0xileri/status/2052951163050377622',
   },
   {
     project: 'Unipix NFT',
     result: 'NFT Spot Won',
     detail: 'Earned an NFT spot for content creation.',
+    url: 'https://x.com/0xileri/status/2054063310794788879',
   },
   {
     project: '365 NFT',
     result: 'NFT Spot Won',
     detail: 'Earned an NFT spot for content creation.',
+    url: 'https://x.com/0xileri/status/2050268007709241640',
   },
 ]
 
@@ -98,14 +112,15 @@ export const recognition =
   'Received rewards, placements, and ecosystem recognition across multiple web3 projects through content creation, growth initiatives, community participation, and marketing campaigns.'
 
 export const proofOfWork = [
-  { project: 'LaunchMyNFT', label: '1st place screenshot', image: launchMyNftProof },
-  { project: 'Bungee', label: '1st place screenshot', image: bungeeProof },
-  { project: 'Melee Market', label: 'Winner announcement', image: meleeMarketProof },
-  { project: 'PerleLabs', label: 'Top 5 leaderboard', image: perlelabsProof },
-  { project: 'Stitch', label: 'Winner announcement' },
-  { project: 'Altura', label: 'Winner announcement' },
-  { project: 'Euclid', label: 'Winner announcement' },
-  { project: 'Beaks NFT', label: 'NFT spot confirmation' },
-  { project: 'Unipix NFT', label: 'NFT spot confirmation' },
-  { project: '365 NFT', label: 'NFT spot confirmation' },
+  { project: 'LaunchMyNFT', label: '1st place screenshot', image: launchMyNftProof, url: 'https://x.com/0xileri/status/2049553153738117425' },
+  { project: 'Bungee', label: '1st place screenshot', image: bungeeProof, url: 'https://x.com/0xileri/status/2035001439517335798' },
+  { project: 'Melee Market', label: 'Winner announcement', image: meleeMarketProof, url: 'https://x.com/0xileri/status/2053754076479770751' },
+  { project: 'PerleLabs', label: 'Top 5 leaderboard', image: perlelabsProof, url: 'https://x.com/0xileri/status/2037235146655478071' },
+  { project: 'Yetch', label: '2nd place screenshot', image: yetchProof, url: 'https://x.com/0xileri/status/2033976307210481759' },
+  { project: 'Euclid', label: 'Winner announcement', image: euclidProof, url: 'https://x.com/0xileri/status/2032896106808414325' },
+  { project: 'Altura', label: 'Winner announcement', image: alturaProof, url: 'https://x.com/0xileri/status/2025497795415662709' },
+  { project: 'Dzap', label: 'Winner announcement', url: 'https://x.com/0xileri/status/2041162404545843711' },
+  { project: 'Beaks NFT', label: 'NFT spot confirmation', url: 'https://x.com/0xileri/status/2052951163050377622' },
+  { project: 'Unipix NFT', label: 'NFT spot confirmation', url: 'https://x.com/0xileri/status/2054063310794788879' },
+  { project: '365 NFT', label: 'NFT spot confirmation', url: 'https://x.com/0xileri/status/2050268007709241640' },
 ]
