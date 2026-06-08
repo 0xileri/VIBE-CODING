@@ -145,6 +145,29 @@ section h2 {
   flex-wrap: wrap;
 }
 
+.socials {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.socials__link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.socials__link:hover {
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

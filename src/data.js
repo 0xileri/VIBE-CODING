@@ -7,6 +7,18 @@ export const profile = {
   email: 'bapkingboss2@gmail.com',
 }
 
+export const socials = [
+  { label: 'X', url: 'https://x.com/0xileri' },
+  { label: 'YouTube', url: 'https://youtube.com/@0xileri' },
+  { label: 'TikTok', url: 'https://www.tiktok.com/@0xileri' },
+  { label: 'Instagram', url: 'https://www.instagram.com/0xileri' },
+]
+
+export const telegram = {
+  handle: '@oxileri',
+  url: 'https://t.me/oxileri',
+}
+
 export const stats = [
   { value: '7,700+', label: 'Followers built organically on X' },
   { value: '30+', label: 'Web3 projects collaborated with' },

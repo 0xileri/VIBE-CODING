@@ -1,5 +1,7 @@
 import {
   profile,
+  socials,
+  telegram,
   stats,
   roles,
   achievements,
@@ -53,6 +55,13 @@ function App() {
             <a className="btn btn--ghost" href="#achievements">
               See my wins
             </a>
+          </div>
+          <div className="socials">
+            {socials.map((s) => (
+              <a key={s.label} href={s.url} target="_blank" rel="noreferrer" className="socials__link">
+                {s.label}
+              </a>
+            ))}
           </div>
         </section>
 
@@ -121,11 +130,14 @@ function App() {
           <h2>Let's work together</h2>
           <p>
             Looking for a creator who can grow your community and ship content
-            that wins? Reach out on X or drop an email.
+            that wins? Reach out on X, Telegram, or drop an email.
           </p>
           <div className="contact__actions">
             <a className="btn btn--primary" href={profile.handleUrl} target="_blank" rel="noreferrer">
               DM on X — {profile.handle}
+            </a>
+            <a className="btn btn--ghost" href={telegram.url} target="_blank" rel="noreferrer">
+              Telegram — {telegram.handle}
             </a>
             <a className="btn btn--ghost" href={`mailto:${profile.email}`}>
               {profile.email}
