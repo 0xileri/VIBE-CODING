@@ -2,7 +2,7 @@ export const profile = {
   name: 'ILERI',
   handle: '@0xileri',
   handleUrl: 'https://x.com/0xileri',
-  tagline: 'Web3 Content Creator & Growth Specialist',
+  tagline: 'Ai creator, Web3 Content Creator & Growth Specialist',
   bio: "I help web3 projects grow through content, community, and campaigns — focused on AI, NFTs, and digital culture. Over the past few years I've built an organic audience on X and collected wins across 8+ ecosystems by creating content that actually resonates.",
   email: 'bapkingboss2@gmail.com',
 }
