@@ -1,21 +1,23 @@
 :root {
-  --text: #5b5466;
-  --text-h: #18121f;
-  --bg: #fdfbff;
-  --surface: #ffffff;
-  --border: #e7e2f3;
-  --accent: #7c3aed;
-  --accent-2: #ec4899;
-  --accent-3: #f59e0b;
-  --accent-bg: rgba(124, 58, 237, 0.08);
-  --gradient: linear-gradient(120deg, #7c3aed, #ec4899 60%, #f59e0b);
-  --shadow: rgba(124, 58, 237, 0.12) 0 10px 30px -8px;
+  --text: #b6b0a8;
+  --text-h: #f6f1e9;
+  --bg: #0c0b0a;
+  --bg-soft: #131210;
+  --surface: #181613;
+  --border: #2a2723;
+  --accent: #f5b734;
+  --accent-2: #fb9a3c;
+  --accent-bg: rgba(245, 183, 52, 0.1);
+  --accent-border: rgba(245, 183, 52, 0.3);
+  --gradient: linear-gradient(120deg, #f5d433, #f5b734 45%, #fb7c3c);
+  --glow: rgba(245, 183, 52, 0.18);
+  --shadow: rgba(0, 0, 0, 0.45) 0 16px 40px -12px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
 
   font: 17px/160% var(--sans);
   letter-spacing: 0.1px;
-  color-scheme: light;
+  color-scheme: dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -30,6 +32,10 @@
 
 body {
   margin: 0;
+  background:
+    radial-gradient(620px circle at 14% 0%, var(--glow), transparent 60%),
+    radial-gradient(520px circle at 86% 18%, rgba(251, 154, 60, 0.1), transparent 55%),
+    var(--bg);
 }
 
 #root {

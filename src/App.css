@@ -7,8 +7,8 @@
   justify-content: space-between;
   gap: 24px;
   padding: 18px 48px;
-  background: rgba(253, 251, 255, 0.85);
-  backdrop-filter: blur(10px);
+  background: rgba(12, 11, 10, 0.78);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -55,9 +55,10 @@
 
 .nav__cta {
   font-weight: 600;
+  color: var(--accent);
   padding: 8px 16px;
   border-radius: 999px;
-  border: 1px solid var(--accent-bg);
+  border: 1px solid var(--accent-border);
   background: var(--accent-bg);
 }
 
@@ -161,15 +162,19 @@ section h2 {
 }
 
 .btn--primary {
-  color: #fff;
+  color: #1a1305;
   background: var(--gradient);
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 32px -10px var(--glow);
 }
 
 .btn--ghost {
   color: var(--text-h);
   background: var(--surface);
   border-color: var(--border);
+}
+
+.btn--ghost:hover {
+  border-color: var(--accent-border);
 }
 
 /* About */
@@ -306,7 +311,7 @@ section h2 {
   letter-spacing: 0.2px;
   padding: 5px 12px;
   border-radius: 999px;
-  color: #fff;
+  color: #1a1305;
   background: var(--gradient);
   white-space: nowrap;
 }
@@ -349,7 +354,7 @@ section h2 {
   font-size: 14px;
   font-weight: 600;
   color: var(--accent);
-  background: linear-gradient(135deg, var(--accent-bg), rgba(236, 72, 153, 0.08));
+  background: linear-gradient(135deg, var(--accent-bg), rgba(251, 154, 60, 0.06));
   border-bottom: 1px solid var(--border);
 }
 
