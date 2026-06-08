@@ -6,6 +6,7 @@ import {
   recognition,
   proofOfWork,
 } from './data'
+import avatar from './assets/avatar.jpg'
 import './App.css'
 
 const sections = [
@@ -21,6 +22,7 @@ function App() {
     <>
       <header className="nav">
         <a className="nav__brand" href="#top">
+          <img className="nav__avatar" src={avatar} alt="" />
           {profile.name}
         </a>
         <nav className="nav__links">
@@ -37,6 +39,7 @@ function App() {
 
       <main id="top">
         <section className="hero">
+          <img className="hero__avatar" src={avatar} alt={`${profile.name} logo`} />
           <p className="hero__eyebrow">{profile.handle} · {profile.tagline}</p>
           <h1 className="hero__title">
             Hi, I'm <span className="accent">{profile.name}</span> —

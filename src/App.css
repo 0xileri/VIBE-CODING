@@ -13,14 +13,29 @@
 }
 
 .nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 800;
   font-size: 22px;
   letter-spacing: -0.5px;
   color: var(--text-h);
+}
+
+.nav__brand,
+.nav__brand:visited {
   background: var(--gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.nav__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  object-fit: cover;
+  border: 1px solid var(--border);
 }
 
 .nav__links {
@@ -72,10 +87,20 @@ section h2 {
 
 /* Hero */
 .hero {
-  padding-top: 110px;
+  padding-top: 90px;
   padding-bottom: 80px;
   text-align: left;
   max-width: 760px;
+}
+
+.hero__avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 22px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
 }
 
 .hero__eyebrow {
