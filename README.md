@@ -1,7 +1,9 @@
 # ILERI — Portfolio
 
-Personal portfolio for ILERI ([@0xileri](https://x.com/0xileri)) — AI creator,
-web3 content creator, and growth specialist. Built with React + Vite.
+Personal portfolio for ILERI ([@0xileri](https://x.com/0xileri)) — builder,
+AI video maker, and web3 growth specialist. Built with React + Vite.
+
+Live at **[ileri.lol](https://ileri.lol/)**.
 
 ## Design
 
@@ -84,6 +86,10 @@ npm run build && npm start
 
 **Netlify** (`netlify.toml`) — static hosting; the build command and publish
 directory are auto-detected, so there is nothing to configure in the dashboard.
+
+The canonical URL is `https://ileri.lol/`, set in `index.html` as
+`<link rel="canonical">`, `og:url`, and absolute `og:image` / `twitter:image`.
+Change the domain and those four need updating together.
 
 Cache headers are defined twice — `netlify.toml` for Netlify, `serve.json` for
 Railway — and the two are kept in sync deliberately: hashed assets are immutable
