@@ -15,7 +15,7 @@ export const profile = {
   available: 'Open to collaborations',
   bio: "I build, I make AI video, and I help web3 projects grow through content, community, and campaigns — focused on AI, NFTs, and digital culture. Over the past few years I've built an organic audience on X and collected wins across 20+ ecosystems by creating things that actually resonate.",
   bioShort:
-    'Builder and AI video maker. I make things that earn attention — and turn it into community, campaign wins, and growth for the projects I work with.',
+    'Builder and AI video maker. I ship the work, then build the content, community, and campaigns that put it in front of the right people.',
   email: 'bapkingboss2@gmail.com',
 }
 

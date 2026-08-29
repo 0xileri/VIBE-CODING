@@ -19,11 +19,11 @@ export default function Hero() {
           </p>
 
           <h1 className="hero__title reveal" style={{ '--i': 1 }}>
-            <span>Content that</span>
+            <span>I build it —</span>
             <span>
-              <em>earns</em> attention
+              <em>and the audience</em>
             </span>
-            <span className="thin">— and keeps it.</span>
+            <span className="thin">that finds it.</span>
           </h1>
 
           <p className="hero__lead reveal" style={{ '--i': 2 }}>
