@@ -1,10 +1,15 @@
 # Railway deployment configuration.
+#
+# The Node version is NOT set here — Railway has no config-as-code key for it.
+# Railpack reads it from .node-version and package.json engines, both of which
+# pin 22. Without that it defaults to Node 18, which Vite 8 refuses to run on.
 # Railway runs a process rather than serving files directly, so the built site
 # is served by `serve` (a dependency, not npx, so nothing is fetched at boot).
 # Cache headers live in serve.json and mirror the Netlify rules.
 
 [build]
-  builder = "NIXPACKS"
+  # RAILPACK and DOCKERFILE are the only valid values; NIXPACKS is rejected.
+  builder = "RAILPACK"
   buildCommand = "npm run build"
 
 [deploy]
