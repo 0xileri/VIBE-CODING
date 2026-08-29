@@ -1,0 +1,35 @@
+# Netlify build configuration.
+# With this file present, Netlify auto-detects everything on import — there is
+# nothing to type into the build-settings form.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Vite content-hashes everything under /assets, so a changed file gets a new
+# filename. Safe to cache permanently.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fonts are self-hosted under stable (non-hashed) filenames, so "immutable"
+# would strand an old file in caches for a year if a face were ever swapped.
+# A month is nearly as fast and stays correctable.
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# The share card is regenerated whenever the headline or stats change, and
+# social scrapers do their own caching. Keep this short so updates propagate.
+[[headers]]
+  for = "/og.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# No SPA redirect rule: the site is a single page with in-page anchors and no
+# client-side router, so there are no deep paths for Netlify to rewrite.
