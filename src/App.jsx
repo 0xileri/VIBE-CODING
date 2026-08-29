@@ -1,172 +1,58 @@
-import {
-  profile,
-  socials,
-  telegram,
-  stats,
-  roles,
-  achievements,
-  recognition,
-  proofOfWork,
-} from './data'
-import avatar from './assets/avatar.jpg'
+import { useMemo } from 'react'
+import { testimonials } from './data'
+import { useReveal, useScrollSpy } from './hooks/useReveal'
+
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import Marquee from './components/Marquee'
+import About from './components/About'
+import Services from './components/Services'
+import Process from './components/Process'
+import Stats from './components/Stats'
+import Featured from './components/Featured'
+import Achievements from './components/Achievements'
+import Proof from './components/Proof'
+import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
 import './App.css'
 
-const sections = [
+const NAV = [
   { id: 'about', label: 'About' },
-  { id: 'numbers', label: 'By the Numbers' },
-  { id: 'achievements', label: 'Achievements' },
-  { id: 'proof', label: 'Proof of Work' },
+  { id: 'services', label: 'Services' },
+  { id: 'work', label: 'Work' },
+  { id: 'proof', label: 'Proof' },
   { id: 'contact', label: 'Contact' },
 ]
 
 function App() {
+  useReveal()
+  useScrollSpy(useMemo(() => NAV.map((s) => s.id), []))
+
   return (
     <>
-      <header className="nav">
-        <a className="nav__brand" href="#top">
-          <img className="nav__avatar" src={avatar} alt="" />
-          {profile.name}
-        </a>
-        <nav className="nav__links">
-          {sections.map((s) => (
-            <a key={s.id} href={`#${s.id}`}>
-              {s.label}
-            </a>
-          ))}
-        </nav>
-        <a className="nav__cta" href={profile.handleUrl} target="_blank" rel="noreferrer">
-          {profile.handle}
-        </a>
-      </header>
+      <a className="skip" href="#main">
+        Skip to content
+      </a>
 
-      <main id="top">
-        <section className="hero">
-          <img className="hero__avatar" src={avatar} alt={`${profile.name} logo`} />
-          <p className="hero__eyebrow">{profile.handle} · {profile.tagline}</p>
-          <h1 className="hero__title">
-            Hi, I'm <span className="accent">{profile.name}</span> —
-            content that helps web3 projects grow.
-          </h1>
-          <p className="hero__subtitle">{profile.bio}</p>
-          <div className="hero__actions">
-            <a className="btn btn--primary" href={profile.handleUrl} target="_blank" rel="noreferrer">
-              Follow on X
-            </a>
-            <a className="btn btn--ghost" href="#achievements">
-              See my wins
-            </a>
-          </div>
-          <div className="socials">
-            {socials.map((s) => (
-              <a key={s.label} href={s.url} target="_blank" rel="noreferrer" className="socials__link">
-                {s.label}
-              </a>
-            ))}
-          </div>
-        </section>
+      <Nav sections={NAV} />
 
-        <section id="about" className="about">
-          <h2>About</h2>
-          <p>{profile.bio}</p>
-          <div className="about__roles">
-            {roles.map((r) => (
-              <div key={r.org} className="role-pill">
-                <span className="role-pill__role">{r.role}</span>
-                <span className="role-pill__org">{r.org}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="numbers" className="numbers">
-          <h2>By the Numbers</h2>
-          <div className="numbers__grid">
-            {stats.map((s) => (
-              <div key={s.label} className="stat-card">
-                <span className="stat-card__value">{s.value}</span>
-                <span className="stat-card__label">{s.label}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="achievements" className="achievements">
-          <h2>Notable Achievements</h2>
-          <p className="section-lead">Bounty wins &amp; placements across web3 ecosystems.</p>
-          <div className="achievements__grid">
-            {achievements.map((a) => (
-              <a
-                key={a.project}
-                className="achievement-card"
-                href={a.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="achievement-card__head">
-                  <h3>{a.project}</h3>
-                  <span className="badge">{a.result}</span>
-                </div>
-                <p>{a.detail}</p>
-              </a>
-            ))}
-          </div>
-          <p className="recognition">{recognition}</p>
-        </section>
-
-        <section id="proof" className="proof">
-          <h2>Proof of Work</h2>
-          <p className="section-lead">
-            Real screenshots and announcements from the campaigns and bounties
-            I've won — tap any card to view the original post on X.
-          </p>
-          <div className="proof__grid">
-            {proofOfWork.map((p) => (
-              <a
-                key={`${p.project}-${p.label}`}
-                className="proof-card"
-                href={p.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {p.image ? (
-                  <img className="proof-card__image" src={p.image} alt={`${p.project} — ${p.label}`} />
-                ) : (
-                  <span className="proof-card__placeholder">Image</span>
-                )}
-                <div className="proof-card__caption">
-                  <strong>{p.project}</strong>
-                  <span>{p.label}</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <section id="contact" className="contact">
-          <h2>Let's work together</h2>
-          <p>
-            Looking for a creator who can grow your community and ship content
-            that wins? Reach out on X, Telegram, or drop an email.
-          </p>
-          <div className="contact__actions">
-            <a className="btn btn--primary" href={profile.handleUrl} target="_blank" rel="noreferrer">
-              DM on X — {profile.handle}
-            </a>
-            <a className="btn btn--ghost" href={telegram.url} target="_blank" rel="noreferrer">
-              Telegram — {telegram.handle}
-            </a>
-            <a className="btn btn--ghost" href={`mailto:${profile.email}`}>
-              {profile.email}
-            </a>
-          </div>
-        </section>
+      <main id="main">
+        <Hero />
+        <Marquee />
+        <About />
+        <Services />
+        <Process />
+        <Stats />
+        <Featured />
+        <Achievements />
+        <Proof />
+        {testimonials.length > 0 && <Testimonials />}
+        <Contact />
       </main>
 
-      <footer className="footer">
-        <p>
-          © {new Date().getFullYear()} {profile.name}. Built with React &amp; Vite.
-        </p>
-      </footer>
+      <Footer />
     </>
   )
 }
