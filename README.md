@@ -54,6 +54,19 @@ subsets, woff2) so the site has no third-party runtime dependency and renders
 correctly where Google Fonts is blocked. Both families are licensed under the
 SIL Open Font License 1.1.
 
+## Social share card
+
+`public/og.jpg` is the Open Graph preview (2400x1260, a 2x render of the
+standard 1200x630). It is generated from
+[`scripts/og-card.html`](scripts/og-card.html) — open that file in a browser
+and screenshot the `.card` element at 1200x630 with a 2x device pixel ratio,
+then save over `public/og.jpg`. The template uses relative paths, so it renders
+correctly straight from disk with no server.
+
+Edit the headline, stats, or portrait in that file to change the card. Type is
+deliberately larger than it looks like it needs to be: feeds render the card
+around 500px wide, so anything under ~20px in the design becomes unreadable.
+
 ## Development
 
 ```bash
