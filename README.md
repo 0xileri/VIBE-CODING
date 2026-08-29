@@ -69,12 +69,27 @@ around 500px wide, so anything under ~20px in the design becomes unreadable.
 
 ## Deployment
 
-Hosted on Netlify, built from `netlify.toml` — Netlify auto-detects the build
-command (`npm run build`) and publish directory (`dist`) from that file, so
-there is nothing to configure in the dashboard.
-
-Netlify builds the repository's **default branch**, which is
+Both hosts build the repository's **default branch**,
 `claude/portfolio-website-M0DTT`. Merge work into that branch to ship it.
+
+**Railway** (`railway.toml`) — Railway runs a process rather than serving files,
+so the built site is served by [`serve`](https://www.npmjs.com/package/serve).
+It is a real dependency rather than `npx`, so nothing is fetched at boot. It
+binds to Railway's `$PORT`, falling back to 3000 locally. Reproduce a deploy
+exactly with:
+
+```bash
+npm run build && npm start
+```
+
+**Netlify** (`netlify.toml`) — static hosting; the build command and publish
+directory are auto-detected, so there is nothing to configure in the dashboard.
+
+Cache headers are defined twice — `netlify.toml` for Netlify, `serve.json` for
+Railway — and the two are kept in sync deliberately: hashed assets are immutable
+for a year, fonts for a month (their filenames are stable, so `immutable` would
+strand a replaced face), and `og.jpg` for an hour since it is regenerated
+whenever the headline or stats change.
 
 ## Development
 

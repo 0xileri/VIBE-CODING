@@ -1,0 +1,13 @@
+# Railway deployment configuration.
+# Railway runs a process rather than serving files directly, so the built site
+# is served by `serve` (a dependency, not npx, so nothing is fetched at boot).
+# Cache headers live in serve.json and mirror the Netlify rules.
+
+[build]
+  builder = "NIXPACKS"
+  buildCommand = "npm run build"
+
+[deploy]
+  startCommand = "npm start"
+  restartPolicyType = "ON_FAILURE"
+  restartPolicyMaxRetries = 10
