@@ -11,6 +11,11 @@ export default function Proof() {
   // Only entries with a screenshot are viewable in the lightbox; the rest link out.
   const gallery = proofOfWork.filter((p) => p.image)
 
+  // The grid hands its first card a 2x2 feature tile, so a screenshot has to
+  // lead regardless of how data.js is ordered — otherwise a link-only entry
+  // added at the top blows up into a large empty placeholder.
+  const ordered = [...gallery, ...proofOfWork.filter((p) => !p.image)]
+
   const close = () => {
     setOpen(null)
     triggerRef.current?.focus()
@@ -26,7 +31,7 @@ export default function Proof() {
       />
 
       <div className="proof__grid">
-        {proofOfWork.map((p, i) =>
+        {ordered.map((p, i) =>
           p.image ? (
             <button
               type="button"

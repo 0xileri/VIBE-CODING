@@ -109,6 +109,7 @@ export const achievements = [
     result: '$3,000 Hackathon Win',
     type: 'Hackathon',
     detail: 'Won the OKX hackathon and took home a $3,000 prize.',
+    url: 'https://x.com/0xileri/status/2085564399511638201',
   },
   {
     project: 'LaunchMyNFT',
@@ -224,6 +225,7 @@ export const recognition =
   'Prizes, placements, and ecosystem recognition across multiple web3 projects — earned through building, content creation, growth initiatives, community participation, and marketing campaigns.'
 
 export const proofOfWork = [
+  { project: 'OKX', label: 'Hackathon win announcement', url: 'https://x.com/0xileri/status/2085564399511638201' },
   { project: 'LaunchMyNFT', label: '1st place screenshot', image: launchMyNftProof, url: 'https://x.com/0xileri/status/2049553153738117425' },
   { project: 'Bungee', label: '1st place screenshot', image: bungeeProof, url: 'https://x.com/0xileri/status/2035001439517335798' },
   { project: 'Melee Market', label: 'Winner announcement', image: meleeMarketProof, url: 'https://x.com/0xileri/status/2053754076479770751' },
