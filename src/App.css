@@ -801,6 +801,26 @@ main {
   color: #6b6659;
 }
 
+/* Optional link to example work, on the cream ground. */
+.service__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 16px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(18, 17, 15, 0.28);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #12110f;
+  transition: color 0.25s, border-color 0.25s, gap 0.3s var(--ease-out);
+}
+
+.service__link:hover {
+  color: var(--amber-hot);
+  border-color: var(--amber-hot);
+  gap: 11px;
+}
+
 .service__tags {
   display: flex;
   flex-wrap: wrap;

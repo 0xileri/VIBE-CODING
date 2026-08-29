@@ -18,9 +18,10 @@ export default function About() {
             <p>{profile.bio}</p>
             <p>
               Most of that work has been earned rather than assigned: campaigns entered
-              alongside thousands of other creators, hackathons judged on what actually got
-              built, and content judged on its own merit. The wins below are the ones that
-              came with a public result attached.
+              alongside thousands of other creators, and content judged on its own merit.
+              On the building side, LEAPSY — an options-strategy agent I built for
+              long-horizon crypto investors — took a $3,000 prize at the OKX hackathon and
+              is listed on OKX.AI.
             </p>
           </div>
 

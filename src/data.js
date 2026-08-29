@@ -92,6 +92,7 @@ export const services = [
     summary:
       'AI-generated video, imagery, and concept work for brands that want to move faster than a production schedule — without looking like everyone else.',
     deliverables: ['AI video production', 'Imagery & concept art', 'Creative direction', 'Brand-safe output'],
+    link: { label: 'See recent AI video work', url: 'https://x.com/0xileri/status/2088141897906680180' },
   },
 ]
 
@@ -105,10 +106,11 @@ export const process = [
 
 export const achievements = [
   {
-    project: 'OKX',
+    project: 'OKX — LEAPSY',
     result: '$3,000 Hackathon Win',
     type: 'Hackathon',
-    detail: 'Won the OKX hackathon and took home a $3,000 prize.',
+    detail:
+      'Built LEAPSY, a structured-position design agent for long-horizon crypto options investors using real listed Deribit contracts. Listed on OKX.AI.',
     url: 'https://x.com/0xileri/status/2085564399511638201',
   },
   {
@@ -225,7 +227,8 @@ export const recognition =
   'Prizes, placements, and ecosystem recognition across multiple web3 projects — earned through building, content creation, growth initiatives, community participation, and marketing campaigns.'
 
 export const proofOfWork = [
-  { project: 'OKX', label: 'Hackathon win announcement', url: 'https://x.com/0xileri/status/2085564399511638201' },
+  { project: 'OKX — LEAPSY', label: 'Hackathon win announcement', url: 'https://x.com/0xileri/status/2085564399511638201' },
+  { project: 'AI video', label: 'Recent work reel', url: 'https://x.com/0xileri/status/2088141897906680180' },
   { project: 'LaunchMyNFT', label: '1st place screenshot', image: launchMyNftProof, url: 'https://x.com/0xileri/status/2049553153738117425' },
   { project: 'Bungee', label: '1st place screenshot', image: bungeeProof, url: 'https://x.com/0xileri/status/2035001439517335798' },
   { project: 'Melee Market', label: 'Winner announcement', image: meleeMarketProof, url: 'https://x.com/0xileri/status/2053754076479770751' },

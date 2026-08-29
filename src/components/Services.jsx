@@ -1,6 +1,6 @@
 import { services, profile } from '../data'
 import SectionHead from './SectionHead'
-import { ArrowRight } from './Icons'
+import { ArrowRight, ArrowUpRight } from './Icons'
 
 export default function Services() {
   return (
@@ -20,6 +20,17 @@ export default function Services() {
               <div>
                 <h3 className="service__title">{s.title}</h3>
                 <p className="service__summary">{s.summary}</p>
+                {s.link && (
+                  <a
+                    className="service__link"
+                    href={s.link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {s.link.label}
+                    <ArrowUpRight width={14} height={14} />
+                  </a>
+                )}
               </div>
               <ul className="service__tags">
                 {s.deliverables.map((d) => (
