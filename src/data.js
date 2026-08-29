@@ -10,12 +10,12 @@ export const profile = {
   name: 'ILERI',
   handle: '@0xileri',
   handleUrl: 'https://x.com/0xileri',
-  tagline: 'AI Creator · Web3 Content & Growth',
-  role: 'Content creator & growth specialist',
+  tagline: 'Builder · AI Video Maker · Web3 Content & Growth',
+  role: 'Builder, AI video maker & growth specialist',
   available: 'Open to collaborations',
-  bio: "I help web3 projects grow through content, community, and campaigns — focused on AI, NFTs, and digital culture. Over the past few years I've built an organic audience on X and collected wins across 20+ ecosystems by creating content that actually resonates.",
+  bio: "I build, I make AI video, and I help web3 projects grow through content, community, and campaigns — focused on AI, NFTs, and digital culture. Over the past few years I've built an organic audience on X and collected wins across 20+ ecosystems by creating things that actually resonate.",
   bioShort:
-    'I make content that earns attention — and turns it into community, campaign wins, and growth for the projects I work with.',
+    'Builder and AI video maker. I make things that earn attention — and turn it into community, campaign wins, and growth for the projects I work with.',
   email: 'bapkingboss2@gmail.com',
 }
 
@@ -32,7 +32,7 @@ export const telegram = {
 }
 
 export const stats = [
-  { value: '7,700', suffix: '+', label: 'Followers built organically on X' },
+  { value: '9,200', suffix: '+', label: 'Followers built organically on X' },
   { value: '30', suffix: '+', label: 'Web3 projects collaborated with' },
   { value: '20', suffix: '+', label: 'Ecosystems with bounty wins' },
   { value: '3', suffix: '', label: 'Active roles across live ecosystems' },
@@ -40,7 +40,7 @@ export const stats = [
 
 /* Three-up strip under the hero. */
 export const heroMeta = [
-  { key: 'Reach', value: '7,700+ organic followers on X' },
+  { key: 'Reach', value: '9,200+ organic followers on X' },
   { key: 'Collaborations', value: '30+ web3 projects shipped with' },
   { key: 'Recognition', value: 'Wins across 20+ ecosystems' },
 ]
@@ -53,6 +53,7 @@ export const roles = [
 
 /* Marquee ticker — ecosystems and projects worked with. */
 export const ticker = [
+  'OKX',
   'LaunchMyNFT',
   'Bungee',
   'PerleLabs',
@@ -87,10 +88,10 @@ export const services = [
   },
   {
     id: 'ai',
-    title: 'AI Creative',
+    title: 'AI Video & Creative',
     summary:
       'AI-generated video, imagery, and concept work for brands that want to move faster than a production schedule — without looking like everyone else.',
-    deliverables: ['AI video & imagery', 'Concept direction', 'Creative iteration', 'Brand-safe output'],
+    deliverables: ['AI video production', 'Imagery & concept art', 'Creative direction', 'Brand-safe output'],
   },
 ]
 
@@ -103,6 +104,12 @@ export const process = [
 ]
 
 export const achievements = [
+  {
+    project: 'OKX',
+    result: '$3,000 Hackathon Win',
+    type: 'Hackathon',
+    detail: 'Won the OKX hackathon and took home a $3,000 prize.',
+  },
   {
     project: 'LaunchMyNFT',
     result: '1st Place Winner',
@@ -214,7 +221,7 @@ export const featured = [
 ]
 
 export const recognition =
-  'Rewards, placements, and ecosystem recognition across multiple web3 projects — earned through content creation, growth initiatives, community participation, and marketing campaigns.'
+  'Prizes, placements, and ecosystem recognition across multiple web3 projects — earned through building, content creation, growth initiatives, community participation, and marketing campaigns.'
 
 export const proofOfWork = [
   { project: 'LaunchMyNFT', label: '1st place screenshot', image: launchMyNftProof, url: 'https://x.com/0xileri/status/2049553153738117425' },

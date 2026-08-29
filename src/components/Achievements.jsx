@@ -22,7 +22,7 @@ export default function Achievements() {
         num="06"
         label="Index"
         title={<>Every <em>result</em>, on the record</>}
-        lead="Bounty wins, leaderboard placements, and NFT spots across web3 ecosystems."
+        lead="Hackathon prizes, bounty wins, leaderboard placements, and NFT spots across web3 ecosystems."
       />
 
       <div className="filters reveal">
@@ -41,23 +41,31 @@ export default function Achievements() {
       </div>
 
       <div className="index reveal" style={{ '--i': 1 }}>
-        {rows.map((a, i) => (
-          <a
-            className="index__row"
-            key={a.project}
-            href={a.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="index__num">{String(i + 1).padStart(2, '0')}</span>
-            <span className="index__project">{a.project}</span>
-            <span className="index__detail">{a.detail}</span>
-            <span className="index__result">{a.result}</span>
-            <span className="index__go" aria-hidden="true">
-              <ArrowUpRight />
-            </span>
-          </a>
-        ))}
+        {rows.map((a, i) => {
+          // Entries without a public post render as plain rows, not dead links.
+          const Row = a.url ? 'a' : 'div'
+          const linkProps = a.url
+            ? { href: a.url, target: '_blank', rel: 'noreferrer' }
+            : undefined
+
+          return (
+            <Row
+              className={`index__row${a.url ? '' : ' index__row--static'}`}
+              key={a.project}
+              {...linkProps}
+            >
+              <span className="index__num">{String(i + 1).padStart(2, '0')}</span>
+              <span className="index__project">{a.project}</span>
+              <span className="index__detail">{a.detail}</span>
+              <span className="index__result">{a.result}</span>
+              {a.url && (
+                <span className="index__go" aria-hidden="true">
+                  <ArrowUpRight />
+                </span>
+              )}
+            </Row>
+          )
+        })}
         {!rows.length && <p className="index__empty">Nothing in this category yet.</p>}
       </div>
 

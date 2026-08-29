@@ -454,6 +454,14 @@ main {
   vertical-align: middle;
 }
 
+.hero__status-part {
+  white-space: nowrap;
+}
+
+.hero__status-sep {
+  white-space: normal;
+}
+
 .pulse {
   position: relative;
   width: 7px;
@@ -1192,6 +1200,19 @@ main {
 .index__row:hover .index__go {
   color: var(--amber);
   transform: translate(3px, -3px);
+}
+
+/* A row with no post to link to: keep the grid, drop the hover affordance. */
+.index__row--static {
+  cursor: default;
+}
+
+.index__row--static:hover {
+  padding-left: clamp(6px, 1.4vw, 18px);
+}
+
+.index__row--static::before {
+  content: none;
 }
 
 .index__empty {

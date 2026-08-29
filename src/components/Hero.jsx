@@ -9,7 +9,13 @@ export default function Hero() {
         <div>
           <p className="hero__status reveal">
             <span className="pulse" />
-            {profile.available} · {profile.tagline}
+            {[profile.available, ...profile.tagline.split(' · ')].map((part, i) => (
+              // Each phrase stays whole; only the separators are break points.
+              <span className="hero__status-part" key={part}>
+                {i > 0 && <span className="hero__status-sep"> · </span>}
+                {part}
+              </span>
+            ))}
           </p>
 
           <h1 className="hero__title reveal" style={{ '--i': 1 }}>

@@ -18,8 +18,9 @@ export default function About() {
             <p>{profile.bio}</p>
             <p>
               Most of that work has been earned rather than assigned: campaigns entered
-              alongside thousands of other creators, judged on the content itself. The wins
-              below are the ones that came with a public announcement attached.
+              alongside thousands of other creators, hackathons judged on what actually got
+              built, and content judged on its own merit. The wins below are the ones that
+              came with a public result attached.
             </p>
           </div>
 
