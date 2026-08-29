@@ -67,6 +67,15 @@ Edit the headline, stats, or portrait in that file to change the card. Type is
 deliberately larger than it looks like it needs to be: feeds render the card
 around 500px wide, so anything under ~20px in the design becomes unreadable.
 
+## Deployment
+
+Hosted on Netlify, built from `netlify.toml` — Netlify auto-detects the build
+command (`npm run build`) and publish directory (`dist`) from that file, so
+there is nothing to configure in the dashboard.
+
+Netlify builds the repository's **default branch**, which is
+`claude/portfolio-website-M0DTT`. Merge work into that branch to ship it.
+
 ## Development
 
 ```bash
